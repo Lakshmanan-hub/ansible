@@ -1,22 +1,20 @@
--
+--- 
+- 
   hosts: appserver
   remote_user: root
-  tasks:
-    -
-name: "intalling docker"
-yum: "name=docker state=present"
-    -
-name: "starting docker"
-service: "name=docker state=started"
-    -
-name: "installing httpd"
-yum: "name=httpd state=present"
-    -
-name: "starting httpd"
-service: "name=httpd state=started"
-    -
-name: "installing python"
-yum: "name=python state=present"
-    -
- # name: "starting python"
-     # service: "name=python state=started"
+  tasks: 
+    - 
+      name: "intalling docker"
+      yum: "name=docker state=present"
+    - 
+      name: "starting docker"
+      service: "name=docker state=started"
+    - 
+      name: "installing httpd"
+      yum: "name=httpd state=present"
+    - 
+      name: "starting httpd"
+      service: "name=httpd state=started"
+    - 
+      name: "installing python"
+      yum: "name=python state=present"
