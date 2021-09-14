@@ -1,6 +1,6 @@
 --- 
 - 
-  hosts: appserver
+  hosts: webserver
   remote_user: root
   tasks: 
     - 
